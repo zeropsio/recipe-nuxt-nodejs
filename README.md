@@ -15,14 +15,10 @@ project:
   name: zerops-nuxt
 
 services:
-  - hostname: nuxtnodejs
+  - hostname: app
     type: nodejs@20
-    buildFromGit: https://github.com/fxck/recipe-nuxt-nodejs
-    ports:
-      - port: 3000
-        httpSupport: true
+    buildFromGit: https://github.com/zeropsio/recipe-nuxt-nodejs
     enableSubdomainAccess: true
-    minContainers: 1
 ```
 
 Join [Zerops Discord community](https://discord.com/invite/WDvCZ54).
