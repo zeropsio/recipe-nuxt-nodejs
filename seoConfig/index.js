@@ -1,12 +1,12 @@
 export default {
-  title: "Logspot - Opensource changelog template",
+  title: "Deploy your Nuxt App with Zerops",
   description:
-    "Logspot is an open source change log template made with Nuxt, Vue, and Tailwindcss.",
+    "Deploy your Nuxt App with Zerops.",
   og: {
-    title: "Logspot - Opensource changelog template",
+    title: "Deploy your Nuxt App with Zerops",
     description:
-      "Logspot is an open source change log template made with Nuxt, Vue, and Tailwindcss.",
-    image: "https://logspot.vercel.app/logspot-banner.png",
-    url: "https://logspot.vercel.app",
+      "Deploy your Nuxt App with Zerops.",
+    // image: "https://example.com/og-banner.png",
+    // url: "https://example.com",
   },
 };
