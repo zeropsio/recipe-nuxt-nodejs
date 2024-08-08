@@ -1,7 +1,7 @@
 <template>
     <div class="code-block">
         <pre ref="code" lang="yaml"><code lang="yaml">{{ code }}</code></pre>
-        <button @click="copyCode">Copy</button>
+        <button ref="copyButton" @click="copyCode">Copy</button>
     </div>
 </template>
 
@@ -23,7 +23,16 @@ export default {
             selection.addRange(range);
             document.execCommand('copy');
             selection.removeAllRanges();
-            alert('Code copied to clipboard!');
+
+            // Change button text to "Copied!"
+            const copyButton = this.$refs.copyButton;
+            const originalText = copyButton.innerText;
+            copyButton.innerText = 'Copied!';
+
+            // Revert button text back to "Copy" after 2 seconds
+            setTimeout(() => {
+                copyButton.innerText = originalText;
+            }, 2000);
         }
     }
 }
