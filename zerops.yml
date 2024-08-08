@@ -1,10 +1,10 @@
 zerops:
-  - setup: app
+  - setup: nuxt
     build:
       base: nodejs@20
       buildCommands:
-        - pnpm i
-        - pnpm build
+        - yarn
+        - yarn build
       deployFiles:
         - .output
         - public
@@ -15,5 +15,5 @@ zerops:
       ports:
         - port: 3000
           httpSupport: true
-      start: pnpm start
+      start: yarn start
       
