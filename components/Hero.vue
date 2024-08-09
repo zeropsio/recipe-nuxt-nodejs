@@ -91,7 +91,6 @@ const zeropsyml = `zerops:
 </script>
 
 <style scoped>
-
 .deploybutton {
   background-color: #00b1a3;
   padding-left: 6rem;
@@ -151,7 +150,6 @@ const zeropsyml = `zerops:
 .zeropsbutton:hover {
   background-color: #F9F9F9;
 }
-
 .form-input {
   @apply block h-10 w-full rounded-md bg-white pr-3 pl-12 text-slate-900 shadow-md shadow-black/5 ring-1 ring-slate-900/5 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary sm:text-sm sm:leading-6;
 }
