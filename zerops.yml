@@ -1,19 +1,18 @@
 zerops:
   - setup: nuxt
     build:
-      base: nodejs@20
+      base: nodejs@18
+      prepareCommands:
+        - node -v
       buildCommands:
         - yarn
         - yarn build
       deployFiles:
-        - .output
-        - public
-        - node_modules
-        - package.json
+        - .output/~
     run:
-      base: nodejs@20
+      base: nodejs@18
       ports:
         - port: 3000
           httpSupport: true
-      start: yarn start
+      start: node server/index.mjs
       
