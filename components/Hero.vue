@@ -38,16 +38,16 @@
       <div class="flex flex-row gap-10 justify-center mt-10">
         <div class="flex flex-col gap-5">
           <Codeblock :code="importyaml" />
-          <div class="flex flex-col py-10 h-[260px] rounded-md gap-5 px-10 border-[#E6E6E6] border">
+          <div class="flex flex-col py-10 h-[260px] rounded-md gap-5 px-10 border-slate-150 border">
             <a href="https://github.com/zeropsio/recipe-nuxt-nodejs" target="_blank"
-              class="bg-[#131313] hover:bg-[#4a4a4a] px-6 py-3 font-semibold text-white transition-all rounded-full text-center text-md duration-300 hover:no-underline">Recipe
+              class="bg-slate-900 hover:bg-slate-800 px-6 py-3 font-semibold text-white transition-all rounded-full text-center text-md duration-300 hover:no-underline">Recipe
               Source
               Code</a>
             <a href="https://discord.com/invite/WDvCZ54" target="_blank"
-              class="border border-[#d4d4d4] hover:bg-[#F9F9F9] px-6 py-3 font-semibold text-[#131313] transition-all rounded-full text-center text-md duration-300 hover:no-underline">Discord
+              class="border border-slate-200 hover:bg-[#F9F9F9] px-6 py-3 font-semibold text-slate-700 transition-all rounded-full text-center text-md duration-300 hover:no-underline">Discord
               Server</a>
             <a href="https://docs.zerops.io" target="_blank"
-              class="border border-[#d4d4d4] hover:bg-[#F9F9F9] px-6 py-3 font-semibold text-[#131313] transition-all rounded-full text-center text-md duration-300 hover:no-underline">Zerops
+              class="border border-slate-200 hover:bg-[#F9F9F9] px-6 py-3 font-semibold text-slate-700 transition-all rounded-full text-center text-md duration-300 hover:no-underline">Zerops
               Documentation</a>
           </div>
 
