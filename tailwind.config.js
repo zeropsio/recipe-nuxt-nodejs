@@ -36,7 +36,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography","tailwindcss","postcss","autoprefixer")],
   content: [
     `components/**/*.{vue,js}`,
     `layouts/**/*.vue`,

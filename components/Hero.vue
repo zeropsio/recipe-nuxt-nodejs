@@ -8,14 +8,14 @@
           <span class="block">with Zerops</span>
         </h1>
       </div>
-      <p class="mt-4 text-base leading-7 text-slate-600">
+      <p class="mt-5 mb-8 text-base leading-7 text-slate-600">
         Nuxt SSR Node.js example running on Zerops.
         Deploy and test yourself with a single click.
       </p>
       <a href="https://app.zerops.io/recipe/nextjs-nodejs" target="_blank"
-        className="text-lg inline-block hover:no-underline text-white">
+        class="text-lg inline-block hover:no-underline text-white">
         <span
-          className="deploybutton rounded-full flex flex-row items-center justify-center space-x-4 hover:-translate-y-1 duration-300 text-white">
+          class="bg-[#00b1a3] hover:bg-[#3cbdb2] px-24 py-2.5 font-bold transition-all rounded-full flex flex-row items-center justify-center space-x-4 hover:-translate-y-1 duration-300 text-white">
           <span>Deploy on Zerops</span>
           <svg xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" height="22px" viewBox="0 0 24 24"
             width="24px" fill="#fff">
@@ -32,20 +32,22 @@
           </svg>
         </span>
       </a>
-      <p>Deploying will import the following structure (zerops-project-import.yml)
+      <p class="mt-14 text-base leading-7 text-slate-600">Deploying will import the following structure
+        (zerops-project-import.yml)
         and use following (zerops.yml) instructions to build and deploy your app:</p>
-      <div class="flex flex-row gap-10 justify-center">
+      <div class="flex flex-row gap-10 justify-center mt-10">
         <div class="flex flex-col gap-5">
           <Codeblock :code="importyaml" />
-          <div className="flex flex-col py-10 h-[260px] rounded-md gap-5 px-10 border-[#E6E6E6] border">
+          <div class="flex flex-col py-10 h-[260px] rounded-md gap-5 px-10 border-[#E6E6E6] border">
             <a href="https://github.com/zeropsio/recipe-nuxt-nodejs" target="_blank"
-              className="primarybutton rounded-full text-center text-md duration-300 hover:no-underline">Recipe Source
+              class="bg-[#131313] hover:bg-[#4a4a4a] px-6 py-3 font-semibold text-white transition-all rounded-full text-center text-md duration-300 hover:no-underline">Recipe
+              Source
               Code</a>
             <a href="https://discord.com/invite/WDvCZ54" target="_blank"
-              className="discordbutton rounded-full text-center text-md duration-300 hover:no-underline">Discord
+              class="border border-[#d4d4d4] hover:bg-[#F9F9F9] px-6 py-3 font-semibold text-[#131313] transition-all rounded-full text-center text-md duration-300 hover:no-underline">Discord
               Server</a>
             <a href="https://docs.zerops.io" target="_blank"
-              className="zeropsbutton rounded-full text-center text-md duration-300 hover:no-underline">Zerops
+              class="border border-[#d4d4d4] hover:bg-[#F9F9F9] px-6 py-3 font-semibold text-[#131313] transition-all rounded-full text-center text-md duration-300 hover:no-underline">Zerops
               Documentation</a>
           </div>
 
@@ -89,71 +91,3 @@ const zeropsyml = `zerops:
       start: pnpm start
       `.trimStart();
 </script>
-
-<style scoped>
-.deploybutton {
-  background-color: #00b1a3;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  padding-top: 0.62rem;
-  padding-bottom: 0.62rem;
-  font-weight: 700;
-  color: #fff;
-  transition: 300ms;
-}
-
-.deploybutton:hover {
-  background-color: #3cbdb2;
-}
-
-.primarybutton {
-  background-color: #131313;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-weight: 600;
-  color: #fff;
-  transition: 300ms;
-}
-
-.primarybutton:hover {
-  background-color: #4a4a4a;
-}
-
-.discordbutton {
-  border: #d4d4d4 solid 1px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-weight: 600;
-  color: #131313;
-  transition: 300ms;
-}
-
-.discordbutton:hover {
-  background-color: #F9F9F9;
-}
-
-.zeropsbutton {
-  border: #d4d4d4 solid 1px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-weight: 600;
-  color: #131313;
-  transition: 300ms;
-}
-
-.zeropsbutton:hover {
-  background-color: #F9F9F9;
-}
-.form-input {
-  @apply block h-10 w-full rounded-md bg-white pr-3 pl-12 text-slate-900 shadow-md shadow-black/5 ring-1 ring-slate-900/5 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary sm:text-sm sm:leading-6;
-}
-.form-submit {
-  @apply inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 bg-slate-900 text-white hover:bg-slate-700 ml-4 flex-none;
-}
-</style>
