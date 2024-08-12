@@ -1,7 +1,7 @@
 export default {
   title: "Deploy your Nuxt App with Zerops",
   description:
-    "Deploy your Nuxt App with Zerops.",
+    "Nuxt SSR Node.js example running on Zerops. Deploy and test yourself with a single click.",
   og: {
     title: "Deploy your Nuxt App with Zerops",
     description:

@@ -24,12 +24,10 @@ export default {
             document.execCommand('copy');
             selection.removeAllRanges();
 
-            // Change button text to "Copied!"
             const copyButton = this.$refs.copyButton;
             const originalText = copyButton.innerText;
             copyButton.innerText = 'Copied!';
 
-            // Revert button text back to "Copy" after 2 seconds
             setTimeout(() => {
                 copyButton.innerText = originalText;
             }, 2000);

@@ -12,7 +12,7 @@
         Nuxt SSR Node.js example running on Zerops.
         Deploy and test yourself with a single click.
       </p>
-      <a href="https://app.zerops.io/recipe/nextjs-nodejs" target="_blank"
+      <a href="https://app.zerops.io/recipe/nuxt-nodejs" target="_blank"
         class="text-lg inline-block hover:no-underline text-white">
         <span
           class="bg-[#00b1a3] hover:bg-[#3cbdb2] px-24 py-2.5 font-bold transition-all rounded-full flex flex-row items-center justify-center space-x-4 hover:-translate-y-1 duration-300 text-white">
