@@ -16,7 +16,7 @@
     "tailwindcss": "^3.4.13",
     "vite": "^5.4.8"
   },
-  "packageManager": "yarn@1.22.19",
+  "packageManager": "yarn@4.5.0",
   "dependencies": {
     "@nuxt/kit": "^3.13.2",
     "highlight.js": "^11.10.0"
