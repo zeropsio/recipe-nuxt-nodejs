@@ -11,11 +11,14 @@
     "@nuxt/content": "^2.4.2",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@tailwindcss/typography": "^0.5.9",
-    "nuxt": "^3.1.1",
-    "nuxt-icon": "^0.2.10"
+    "nuxt": "^3.13.2",
+    "nuxt-icon": "^0.2.10",
+    "tailwindcss": "^3.4.13",
+    "vite": "^5.4.8"
   },
   "packageManager": "yarn@1.22.19",
   "dependencies": {
+    "@nuxt/kit": "^3.13.2",
     "highlight.js": "^11.10.0"
   }
 }

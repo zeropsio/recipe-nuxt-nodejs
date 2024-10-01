@@ -1,7 +1,7 @@
 zerops:
-  - setup: nuxt
+  - setup: app
     build:
-      base: nodejs@18
+      base: nodejs@20
       prepareCommands:
         - node -v
       buildCommands:
@@ -10,7 +10,7 @@ zerops:
       deployFiles:
         - .output/~
     run:
-      base: nodejs@18
+      base: nodejs@20
       ports:
         - port: 3000
           httpSupport: true
